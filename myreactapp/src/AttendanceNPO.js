@@ -1,8 +1,9 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import NavBarNPO from "./NavBar/NavBarNPO";
+import "./App.css";
 
-function NPO() {
+function AttendanceNPO() {
     let navigate = useNavigate(); 
 
     function handleAttendanceButton() {
@@ -24,9 +25,9 @@ function NPO() {
                 handleCertificateButton={handleCertificateButton}
                 handleReportButton={handleReportButton}
             />
-            <h1>NPO Page</h1>
+            <h1>Attendance Report</h1>
         </header>
     );
 }
 
-export default NPO;
+export default AttendanceNPO;
