@@ -1,6 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import "./App.css";
+import NavBar from "./NavBar/NavBar";
 
 function Login() {
     let navigate = useNavigate(); 
@@ -15,11 +16,11 @@ function Login() {
 
     return (
         <header className="App-header">
+            <NavBar 
+                handleVolunteerButton={handleVolunteerButton}
+                handleNPOButton={handleNPOButton}
+            />
             <h1>BIG AT HEART</h1>
-            <div className="button-container">
-                <button type="button" className="button-style" onClick={handleVolunteerButton}>Volunteer</button>
-                <button type="button" className="button-style" onClick={handleNPOButton}>NPO</button>
-            </div>
         </header>
     );
 }
