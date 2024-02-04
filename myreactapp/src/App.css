@@ -1,0 +1,75 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #F1E9E1;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: black;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  text-align: center;
+}
+
+.button-style {
+  display: flex;
+  justify-content: center;
+  gap: 10px; 
+  background-color: white;
+  text-align: center;
+  border-radius: 10px;
+}
+
+button {
+  padding: 10px 20px; 
+  margin: 10px; 
+  cursor: pointer; 
+}
+
+.userForm {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+#userForm label {
+  width: 100px;
+  float: left;
+  padding-right: 20px;
+  padding-top: 8px;
+  font-size: 20px;
+  white-space: nowrap;
+}
+
+#userForm input {
+  margin-bottom: 15px;
+}
+
+.formContainer {
+  align-items: center;
+  text-align: center;
+}
