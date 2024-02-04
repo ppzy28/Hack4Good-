@@ -12,6 +12,9 @@ import VolunteerActivities from "./VolunteerActivities";
 import AttendanceNPO from "./AttendanceNPO";
 import CertNPO from "./CertNPO";
 import NPOReport from "./NPOReport";
+import AttendanceReport from "./NPOReports/AttendanceReport";
+import DemographicsReport from "./NPOReports/DemographicsReport";
+import VolunteerActivityReport from "./NPOReports/VolunteerActivityReport";
 
 const App = () => {
   return (
@@ -27,6 +30,9 @@ const App = () => {
         <Route path="/AttendanceNPO" element={<AttendanceNPO />} />
         <Route path="/CertNPO" element={<CertNPO />} />
         <Route path="/NPOReport" element={<NPOReport />} />
+        <Route path="/AttendanceReport" element={<AttendanceReport />} />
+        <Route path="/DemographicsReport" element={<DemographicsReport />} />
+        <Route path="/VolunteerActivityReport" element={<VolunteerActivityReport />} />
       </Routes>
     </div>
     

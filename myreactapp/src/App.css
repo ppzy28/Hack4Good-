@@ -62,3 +62,9 @@ button {
   align-items: center;
   text-align: center;
 }
+
+.chart-container {
+  width: 400px;
+  height: 400px;
+}
+
