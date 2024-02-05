@@ -4,8 +4,7 @@
 
 
 .App-header {
-  background-color: #F1E9E1;
-  min-height: 100vh;
+  min-height: 25vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -61,4 +60,10 @@ button {
 .formContainer {
   align-items: center;
   text-align: center;
+}
+
+.listing-card { 
+  float: left; 
+  margin-right: 2vw;
+  width: 30vw;
 }
