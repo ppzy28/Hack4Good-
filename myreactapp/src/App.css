@@ -67,3 +67,42 @@ button {
   margin-right: 2vw;
   width: 30vw;
 }
+
+Button { 
+  text-transform: none;
+}
+
+.formGroup { 
+  display: flex;
+  font-size: 1.2em;
+  align-items: center;
+  justify-content: center;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+.formGroup button { 
+  border: none;
+  background-color: maroon;
+  border-radius: 4px;
+  color: white;
+  padding: 12px;
+
+}
+
+.formGroup input { 
+  margin-top: 1vh; 
+  margin-bottom: 1vh;
+  font-size: 1em;
+}
+
+.formGroup label { 
+  margin-right: 1vw;
+  display: inline-block;
+}
+
+.signUpHeader h1 { 
+  text-align: center;
+  font-size: 40px;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+

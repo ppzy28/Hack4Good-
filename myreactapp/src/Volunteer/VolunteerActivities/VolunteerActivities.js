@@ -47,6 +47,9 @@ function VolunteerActivities() {
         navigate('/ChildrenDayPage');
     }
 
+    function ChildrenDayForm() { 
+        navigate('/ChildrensDayForm');
+    }
 
     return (
         <>
@@ -56,7 +59,7 @@ function VolunteerActivities() {
                 handleEnrolButton={handleEnrolButton}
                 handleRequestButton={handleRequestButton}
             />
-            <h1>View Activities</h1>
+            <h1 style={{"font-family": "'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif"}}>View Activities</h1>
         </header>
         <div className="map-list">
             <button id="map" onClick={displayMap}>Map</button>
@@ -88,7 +91,7 @@ function VolunteerActivities() {
 
                     <CardActions>
                         <Button size="small" onClick={ChildrenDayPage}>More Info</Button>
-                        <Button>Sign Up</Button>
+                        <Button onClick={ChildrenDayForm}>Sign Up</Button>
                     </CardActions>
                 </Card>
 
@@ -107,7 +110,7 @@ function VolunteerActivities() {
 
                     <CardActions>
                         <Button size="small" onClick={ChildrenDayPage}>More Info</Button>
-                        <Button>Sign Up</Button>
+                        <Button >Sign Up</Button>
                     </CardActions>
                 </Card>
             </div> : <></> }

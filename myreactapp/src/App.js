@@ -12,6 +12,7 @@ import VolunteerActivities from "./Volunteer/VolunteerActivities/VolunteerActivi
 import AttendanceNPO from "./AttendanceNPO";
 import CertNPO from "./CertNPO";
 import NPOReport from "./NPOReport";
+import ChildrensDayForm from "./Volunteer/VolunteerActivities/Forms/ChildrensDayForm";
 
 const App = () => {
   return (
@@ -27,6 +28,7 @@ const App = () => {
         <Route path="/AttendanceNPO" element={<AttendanceNPO />} />
         <Route path="/CertNPO" element={<CertNPO />} />
         <Route path="/NPOReport" element={<NPOReport />} />
+        <Route path="/ChildrensDayForm" element={<ChildrensDayForm/>} />
       </Routes>
     </div>
     
