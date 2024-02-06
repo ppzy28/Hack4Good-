@@ -106,3 +106,47 @@ Button {
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 
+.history-header h1 {
+  text-align: center;
+  background-color: darkgrey;
+}
+
+.table-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+
+.project-table {
+  width: 100%;
+  border-collapse: collapse;
+  overflow-x: auto;
+}
+
+.project-table th {
+  padding: 0.2em;
+  border-bottom: 1px solid #eee;
+  font-size: 18px;
+  color: grey;
+}
+
+.project-table thead {
+  background-color: #f2f2f2;
+}
+
+.project-table tbody td {
+  padding: 10px;
+  font-size: 20px; 
+  border-color: grey;
+}
+
+.project-logo img {
+  height: 30px;
+  margin-right: 10px;
+}
+
+.project-beneficiary {
+  display: flex;
+  align-items: center;
+}
