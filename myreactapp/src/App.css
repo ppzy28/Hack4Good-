@@ -146,6 +146,11 @@ Button {
   margin-right: 10px;
 }
 
+.project-table tbody tr {
+  border-bottom: 1px solid lightgray;
+}
+
+
 .project-beneficiary {
   display: flex;
   align-items: center;
