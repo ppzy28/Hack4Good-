@@ -11,11 +11,15 @@ function Volunteer() {
     }
 
     function handleRequestButton() {
-        navigate('/Cert'); 
+        navigate('/RequestCert'); 
     }
 
     function handleActivityButton() {
         navigate('/VolunteerActivities'); 
+    }
+
+    function handleChallengesButton() {
+        navigate('/AllChallenges'); 
     }
 
     return (
@@ -24,7 +28,7 @@ function Volunteer() {
                 handleActivityButton={handleActivityButton}
                 handleEnrolButton={handleEnrolButton}
                 handleRequestButton={handleRequestButton}
-
+                handleChallengesButton={handleChallengesButton}
             />
             <h1>Volunteer page</h1>
         </header>

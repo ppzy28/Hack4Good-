@@ -22,7 +22,7 @@ function VolunteerActivities() {
     }
 
     function handleRequestButton() {
-        navigate('/Cert'); 
+        navigate('/RequestCert'); 
     }
 
     function handleActivityButton() {

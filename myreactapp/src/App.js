@@ -7,12 +7,12 @@ import Volunteer from "./Volunteer";
 import NPO from "./NPO";
 import Enrol from "./Enrol";
 import RequestCert from "./Volunteer/ReqCert/RequestCert";
-import Cert from "./Cert";
 import VolunteerActivities from "./Volunteer/VolunteerActivities/VolunteerActivities";
 import AttendanceNPO from "./AttendanceNPO";
 import CertNPO from "./CertNPO";
 import NPOReport from "./NPOReport";
 import ChildrensDayForm from "./Volunteer/VolunteerActivities/Forms/ChildrensDayForm";
+import AllChallenges from "./Volunteer/Challenges/AllChallenges";
 
 const App = () => {
   return (
@@ -23,15 +23,14 @@ const App = () => {
         <Route path="/NPO" element={<NPO />} />
         <Route path="/Enrol" element={<Enrol />} />
         <Route path="/RequestCert" element={<RequestCert />} />
-        <Route path="/Cert" element={<Cert />} />
         <Route path="/VolunteerActivities" element={<VolunteerActivities />} />
         <Route path="/AttendanceNPO" element={<AttendanceNPO />} />
         <Route path="/CertNPO" element={<CertNPO />} />
         <Route path="/NPOReport" element={<NPOReport />} />
         <Route path="/ChildrensDayForm" element={<ChildrensDayForm/>} />
+        <Route path="/AllChallenges" element={<AllChallenges/>} />
       </Routes>
     </div>
-    
   );
 };
 

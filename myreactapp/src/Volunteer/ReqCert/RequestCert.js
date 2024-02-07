@@ -3,21 +3,33 @@ import { useNavigate } from "react-router-dom";
 import NavBarVolunteer from "../../NavBar/NavBarVolunteer";
 import "../../App.css";
 import ttsLogo from '../../images/tts-logo.png';
+import bigAtHeartLogo from '../../images/big-at-heart-logo.webp'
 
 const projectData = [
   {
     id: 1,
-    title: 'TTSH Frontliners Care Packs',
+    title: 'TTSH',
+    activity: 'Frontliners Care Packs',
     date: '24 Jan 2024',
     attendance: 'Attended',
-    completion: 75,
     logo: ttsLogo, 
-    color: 'blue',
+    color: 'green',
+    cert_url: 'https://drive.google.com/file/d/1rp5-7ZdJcVXocTOPn0WSUfjo8sXeCZig/view?usp=sharing'
+  },
+
+  {
+    id: 2,
+    title: 'Big At Heart',
+    activity: 'Pongal Fest 2023 for Migrant Workers',
+    date: '15 Jan 2024',
+    attendance: 'Not Attended',
+    logo: bigAtHeartLogo, 
+    color: 'green',
     cert_url: 'https://drive.google.com/file/d/1rp5-7ZdJcVXocTOPn0WSUfjo8sXeCZig/view?usp=sharing'
   },
 ];
 
-function Cert() {
+function RequestCert() {
     let navigate = useNavigate(); 
 
     function handleEnrolButton() {
@@ -25,11 +37,15 @@ function Cert() {
     }
 
     function handleRequestButton() {
-        navigate('/Cert'); 
+        navigate('/RequestCert'); 
     }
 
     function handleActivityButton() {
         navigate('/VolunteerActivities'); 
+    }
+
+    function handleChallengesButton() {
+        navigate('/AllChallenges'); 
     }
 
     return (
@@ -39,6 +55,7 @@ function Cert() {
                 handleActivityButton={handleActivityButton}
                 handleEnrolButton={handleEnrolButton}
                 handleRequestButton={handleRequestButton}
+                handleChallengesButton={handleChallengesButton}
             />
             <h1 style={{"font-family": "'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif"}}>Activity History</h1>
         </header>
@@ -48,6 +65,7 @@ function Cert() {
                 <thead>
                     <tr>
                         <th style={{ textAlign: "left" }}>BENEFICIARY</th>
+                        <th style={{ textAlign: "left" }}>ACTIVITY</th>
                         <th>DATE</th>
                         <th>ATTENDANCE</th>
                         <th>CERTIFICATE</th>
@@ -64,8 +82,11 @@ function Cert() {
                                     <div className="project-title">{project.title}</div>
                                 </div>
                             </td>
+                            <td style={{ textAlign: "left" }}> {project.activity} </td>
                             <td style={{ textAlign: "center" }}> {project.date} </td>
-                            <td style={{ textAlign: "center", color:"green" }}>{project.attendance}</td>
+                            <td style={{ textAlign: "center", color: project.attendance === 'Attended' ? 'green' : 'red' }}>
+                                {project.attendance}
+                            </td>
                             <td style={{ textAlign: "center" }}>
                                 <a href='cert_url' target="_blank" rel="noopener noreferrer">
                                     Request Certificate
@@ -80,4 +101,4 @@ function Cert() {
     );
 }
 
-export default Cert;
+export default RequestCert;

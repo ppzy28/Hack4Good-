@@ -3,7 +3,7 @@ import { NavLink, useNavigate } from 'react-router-dom';
 import bigatheartlogo from './bigatheartlogo.png';
 import './NavBar.css';
 
-const NavBarVolunteer = ({ handleActivityButton, handleEnrolButton, handleRequestButton }) => {
+const NavBarVolunteer = ({ handleActivityButton, handleEnrolButton, handleRequestButton, handleChallengesButton }) => {
     const navigate = useNavigate();
 
     const handleLogoClick = () => {
@@ -21,6 +21,7 @@ const NavBarVolunteer = ({ handleActivityButton, handleEnrolButton, handleReques
         <div className="nav-links">
             <button type="button" className="button-style" onClick={handleActivityButton}>Volunteer Activities</button>
             <button type="button" className="button-style" onClick={handleRequestButton}>Request Certificate</button>
+            <button type="button" className="button-style" onClick={handleChallengesButton}>Challenges</button>
         </div>
     </nav>
   );

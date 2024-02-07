@@ -15,7 +15,7 @@ export default function ChildrensDayForm() {
     }
 
     function handleRequestButton() {
-        navigate('/Cert'); 
+        navigate('/RequestCert'); 
     }
 
     function handleActivityButton() {
